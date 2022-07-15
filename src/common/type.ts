@@ -9,3 +9,8 @@ export interface ComponentStatus {
     kinds: Kinds,
     isView: boolean
 }
+
+export interface IData {
+    id?: string,
+    name?:string,
+}

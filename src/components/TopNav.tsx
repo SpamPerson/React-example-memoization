@@ -15,7 +15,7 @@ const TopNav: React.FC = () => {
 	return (
 		<Stack horizontal horizontalAlign="center" tokens={{ childrenGap: 10 }}>
 			<DefaultButton
-				text={callback[0].isView ? "Open Callback" : "Close Callback"}
+				text={callback[0].isView ? "Close Callback" : "Open Callback"}
 				style={{ backgroundColor: callback[0].isView ? "#e0e0e0" : "#fff" }}
 				onClick={() => {
 					if (memo[0].isView) {
@@ -28,7 +28,7 @@ const TopNav: React.FC = () => {
 				}}
 			/>
 			<DefaultButton
-				text={memo[0].isView ? "Open Memo" : "Close Memo"}
+				text={memo[0].isView ? "Close Memo" : "Open Memo"}
 				style={{ backgroundColor: memo[0].isView ? "#e0e0e0" : "#fff" }}
 				onClick={() => {
 					if (callback[0].isView) {
