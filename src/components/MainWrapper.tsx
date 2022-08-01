@@ -3,7 +3,6 @@ import * as React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../common/store';
 import { KindsType } from '../common/type';
-import CallbackWrapper from './callback/CallbackWrapper';
 import MemoWrapper from './memo/MemoWrapper';
 
 const MainWrapper:React.FC = () => {
@@ -13,9 +12,6 @@ const MainWrapper:React.FC = () => {
 
     return(
         <Stack tokens={{padding:10}}>
-            <Stack.Item hidden={!callback.isView}>
-                <CallbackWrapper/>
-            </Stack.Item>
             <Stack.Item hidden={!memo.isView}>
                 <MemoWrapper/>
             </Stack.Item>
